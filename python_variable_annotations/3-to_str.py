@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-"""Basic annotations - to string."""
+""" Basic annotations - to string """
+
 
 def to_str(n: float) -> str:
-    """Type-annotated function that returns the string representation of a float."""
+    """ type-annotated function to_str that takes a float n as argument and
+        returns the string representation of the float. """
     return str(n)
