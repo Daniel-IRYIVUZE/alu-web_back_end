@@ -1,28 +1,84 @@
-# Python Variable Annotations
+# Python Backend Practice Projects
 
-## Description
+This repository contains two Python-based learning projects completed as part of the ALU Web Backend curriculum:
 
-I have completed a series of tasks to practice using type annotations in Python 3. These tasks helped me understand how to add type hints to functions and variables, and how to work with more complex types like lists, tuples, unions, and callables. I also used `mypy` to check my code for type correctness.
+1. **Python Variable Annotations Project**
+2. **Python Async Project**
 
-## What I Did
+These projects helped me strengthen my understanding of Python type hints and asynchronous programming with asyncio.
 
-* I wrote a function to add two floats with proper type hints.
-* I created a function that joins two strings and annotated the types.
-* I made a function that returns the floor of a float as an integer.
-* I built a function to convert a float to a string with annotations.
-* I defined variables with annotations for int, float, bool, and string.
-* I wrote a function that sums a list of floats and returns a float.
-* I created a function that sums a list of ints and floats using type unions.
-* I made a function that returns a tuple with a string and the square of a number.
-* I built a function that returns another function to multiply floats.
-* I annotated a function that returns the length of elements in a list using duck typing.
-* I updated a function to safely return the first element of a sequence using duck typing.
-* I added type annotations to a function that safely gets values from a dictionary.
-* I used `mypy` to type-check a function that zooms in on array elements and fixed any issues.
+---
 
-## What I Learned
+## 1. Python Variable Annotations Project
 
-* How to use type hints in Python
-* How to work with basic and complex types
-* How to use duck typing
-* How to validate types using `mypy`
+This was the first project I completed and it focuses on applying type annotations in Python to improve code readability, enforce type safety, and build confidence using modern Python practices.
+
+### What I Did
+
+* Annotated variables using built-in types like `int`, `float`, `str`, `bool`
+* Created functions using type hints for arguments and return types
+* Applied `List`, `Tuple`, `Dict`, `Union`, and `Callable` for more complex structures
+* Implemented duck typing for handling generic sequences
+* Built higher-order functions that return other functions
+* Used `mypy` to validate types and correct inconsistencies
+
+### Example Tasks
+
+* Adding two floats with annotations
+* Concatenating strings with type safety
+* Using floor division on floats with annotated return types
+* Creating multiplier functions with function return hints
+* Safely retrieving values from a dictionary using `Union`
+* Returning typed tuples from a function
+* Accepting and returning sequence-like objects using duck typing
+
+### Tools & Concepts
+
+* Python 3.7+ type hinting
+* Type checking with `mypy`
+* `typing` module: `List`, `Tuple`, `Union`, `Callable`, `Any`, `Optional`
+* Duck typing concepts in practice
+
+---
+
+## 2. Python Async Project
+
+This project centers on asynchronous programming in Python using the `asyncio` module and coroutines to manage concurrent tasks efficiently.
+
+### What I Learned
+
+* Writing `async` functions and using `await`
+* Running coroutines with `asyncio`
+* Managing multiple concurrent tasks
+* Measuring asynchronous execution time using `time`
+* Integrating randomness with `random.uniform` in async workflows
+
+### Files
+
+| File                         | Description                                          |
+| ---------------------------- | ---------------------------------------------------- |
+| `0-basic_async_syntax.py`    | Waits a random time and returns it                   |
+| `1-concurrent_coroutines.py` | Runs multiple coroutines and returns delays in order |
+| `2-measure_runtime.py`       | Measures average runtime of `wait_n`                 |
+| `3-tasks.py`                 | Creates an `asyncio.Task`                            |
+| `4-tasks.py`                 | Runs multiple async tasks using task function        |
+
+### Requirements Met
+
+* Used Python 3.7 and `asyncio`
+* Followed `pycodestyle` (v2.5.x)
+* Added type hints and documentation
+* All files are executable and well-structured
+
+### Resources
+
+* [Async IO in Python – Real Python](https://realpython.com/async-io-python/)
+* [asyncio — Python docs](https://docs.python.org/3/library/asyncio.html)
+* [random.uniform — Python docs](https://docs.python.org/3/library/random.html#random.uniform)
+
+---
+
+## Author
+
+**Daniel Iryivuze**
+Projects completed as part of the ALU Web Backend program
