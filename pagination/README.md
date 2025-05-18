@@ -1,10 +1,10 @@
-# 📘 Pagination Project
+# Pagination Project
 
 This project is part of the ALU Web Backend curriculum and focuses on implementing various types of pagination techniques in Python using a dataset of popular baby names. The key goal is to understand how to paginate large datasets effectively, including in deletion-resilient scenarios.
 
 ---
 
-## 🧠 Learning Objectives
+## Learning Objectives
 
 By completing this project, you will be able to:
 
@@ -15,7 +15,7 @@ By completing this project, you will be able to:
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 - All files are interpreted/compiled with **Python 3.7** on **Ubuntu 18.04 LTS**
 - All files must end with a new line
@@ -27,9 +27,9 @@ By completing this project, you will be able to:
 
 ---
 
-## 🧪 Project Tasks
+## Project Tasks
 
-### ✅ 0. Simple helper function
+### 0. Simple helper function
 
 **File:** `0-simple_helper_function.py`
 
@@ -43,7 +43,7 @@ index_range(3, 15)  # Output: (30, 45)
 
 ---
 
-### ✅ 1. Simple pagination
+### 1. Simple pagination
 
 **File:** `1-simple_pagination.py`
 
@@ -54,7 +54,7 @@ index_range(3, 15)  # Output: (30, 45)
 
 ---
 
-### ✅ 2. Hypermedia pagination
+### 2. Hypermedia pagination
 
 **File:** `2-hypermedia_pagination.py`
 
@@ -83,7 +83,7 @@ Example:
 
 ---
 
-### ✅ 3. Deletion-resilient hypermedia pagination
+### 3. Deletion-resilient hypermedia pagination
 
 **File:** `3-hypermedia_del_pagination.py`
 
@@ -101,7 +101,7 @@ Returned dictionary includes:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 pagination/
@@ -116,7 +116,7 @@ pagination/
 
 ---
 
-## ✅ Usage
+## Usage
 
 To test each task individually:
 
@@ -129,12 +129,12 @@ $ python3 3-main.py
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Daniel Iryivuze**
 ---
 
-## 📜 License
+## License
 
 This project is for educational purposes and follows Holberton School’s project guidelines.
 
