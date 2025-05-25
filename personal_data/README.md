@@ -1,4 +1,4 @@
-# 🔐 PII Protection & Secure Logging
+# PII Protection & Secure Logging
 
 This Python project demonstrates how to protect **Personally Identifiable Information (PII)** through logging best practices, regex-based data redaction, secure database handling, and password encryption.
 
