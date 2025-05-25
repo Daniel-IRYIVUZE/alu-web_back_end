@@ -4,7 +4,7 @@ This Python project demonstrates how to protect **Personally Identifiable Inform
 
 ---
 
-## 📚 Overview
+## Overview
 
 This project includes:
 
@@ -17,7 +17,7 @@ This project includes:
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -50,11 +50,11 @@ PERSONAL_DATA_DB_HOST=localhost
 PERSONAL_DATA_DB_NAME=your_database
 ```
 
-> ⚠️ **Important:** Do not commit the `.env` file to GitHub.
+> **Important:** Do not commit the `.env` file to GitHub.
 
 ---
 
-## 🔒 PII Fields Redacted
+## PII Fields Redacted
 
 The following fields are considered PII (Personally Identifiable Information) and are redacted before logging:
 
