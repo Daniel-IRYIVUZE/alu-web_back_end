@@ -1,99 +1,85 @@
-Curriculum <br>
-**Short Specializations** <br>
+# MySQL Advanced Project
 
-# 0x00. MySQL advanced
+This repository contains solutions for the MySQL Advanced project, which covers various advanced MySQL concepts including constraints, indexes, stored procedures, functions, views, and triggers.
 
-`Back-end` `SQL` `MySQL` `Databases`
+## Project Tasks
 
-#### Concepts
+### 0. We are all unique!
+**File:** `0-uniq_users.sql`  
+Creates a table `users` with unique email constraints.
 
-_For this project, look at these concepts:_
+### 1. In and not out
+**File:** `1-country_users.sql`  
+Creates a table `users` with an enumeration for country fields.
 
-* [Advanced SQL](https://www.intranet.alxswe.com/concepts/555)
+### 2. Best band ever!
+**File:** `2-fans.sql`  
+Ranks country origins of bands by number of fans.
+
+### 3. Old school band
+**File:** `3-glam_rock.sql`  
+Lists Glam rock bands ranked by longevity.
+
+### 4. Buy buy buy
+**File:** `4-store.sql`  
+Creates a trigger that decreases item quantity after new orders.
+
+### 5. Email validation to sent
+**File:** `5-valid_email.sql`  
+Creates a trigger that resets `valid_email` when email is changed.
+
+### 6. Add bonus
+**File:** `6-bonus.sql`  
+Implements a stored procedure `AddBonus` that adds corrections for students.
+
+### 7. Average score
+**File:** `7-average_score.sql`  
+Creates a stored procedure `ComputeAverageScoreForUser` that computes average scores.
+
+### 8. Optimize simple search
+**File:** `8-index_my_names.sql`  
+Creates an index on the first letter of names.
+
+### 9. Optimize search and score
+**File:** `9-index_name_score.sql`  
+Creates a composite index on name first letter and score.
+
+### 10. Safe divide
+**File:** `10-div.sql`  
+Implements a function `SafeDiv` that handles division by zero.
+
+### 11. No table for a meeting
+**File:** `11-need_meeting.sql`  
+Creates a view `need_meeting` for students needing meetings.
+
+### 12. Average weighted score (Advanced)
+**File:** `100-average_weighted_score.sql`  
+Creates a procedure `ComputeAverageWeightedScoreForUser`.
+
+### 13. Average weighted score for all! (Advanced)
+**File:** `101-average_weighted_score.sql`  
+Creates a procedure `ComputeAverageWeightedScoreForUsers` for all students.
+
+## Requirements
+- MySQL 5.7 on Ubuntu 18.04 LTS
+- All SQL keywords in uppercase
+- Files end with newline
+- Descriptive comments before each task
+
+## Setup
+1. Start MySQL service:
+   ```bash
+   service mysql start
+   ```
+2. Execute SQL files:
+   ```bash
+   cat filename.sql | mysql -uroot -p database_name
+   ```
 
 ## Resources
-
-**Read or watch:**
-
-* [MySQL cheatsheet](https://www.devhints.io/mysql)
-* [MySQL Performance: How To Leverage MySQL Database Indexing](https://www.liquidweb.com/kb/mysql-optimization-how-to-leverage-mysql-database-indexing/)
-* [Stored Procedure](https://www.w3resource.com/mysql/mysql-procedure.php)
-* [Triggers](https://www.w3resource.com/mysql/mysql-triggers.php)
-* [Views](https://www.w3resource.com/mysql/mysql-views.php)
-* [Functions and Operators](https://dev.mysql.com/doc/refman/5.7/en/functions.html)
-* [Trigger Syntax and Examples](https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html)
-* [CREATE TABLE Statement](https://dev.mysql.com/doc/refman/5.7/en/create-table.html)
-* [CREATE PROCEDURE and CREATE FUNCTION Statements](https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html)
-* [CREATE INDEX Statement](https://dev.mysql.com/doc/refman/5.7/en/create-index.html)
-* [CREATE VIEW Statement](https://dev.mysql.com/doc/refman/5.7/en/create-view.html)
-
-## Requirement
-
-### General
-
-* Files executed on Ubuntu 18.04 LTS using `MySQL 5.7` (version 5.7.30)
-* Files must end with a new line
-* All SQL queries should have a comment just before (i.e. syntax above)
-* Files should start with comment describing tasks
-* All SQL keywords should be in uppercase (`SELECT`, `WHERE`...)
-* Mandatory `README.md` file
-* Length of files tested using `wc`
-
-## More Info
-
-### Comments for your SQL file:
-
-```sql
-$ cat my_script.sql
--- 3 first students in the Batch ID=3
--- because Batch 3 is the best
-SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
-$
-```
-
-## Use "container-on-demand" to run MySQL
-
-* Ask for container `Ubuntu 18.04 - Python 3.7`
-* Connect via SSH
-* Or via the Web Terminal
-* In the container, start MySQL before playing with it
-
-```sql
-$ service mysql start
-* MySQL Community Server 5.7.30 is started
-$
-$ cat 0-list_databases.sql | mysql -uroot -p my_database
-Enter password:
-Database
-information_schema
-mysql
-performance_schema
-sys
-$
-```
-
-**In the container, credentials are `root/root`**
-
-## How to import a SQL dump
-
-```sql
-$ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
-Enter password:
-$ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
-Enter password:
-$ echo "SELECT * FROM tv_genres" | mysql -uroot -p hbtn_0d_tvshows
-Enter password:
-id name
-1 Drama
-2 Mystery
-3 Adventure
-4 Fantasy
-5 Comedy
-6 Crime
-7 Suspense
-8 Thriller
-$
-```
-
-## Finally...
-
+- MySQL cheatsheet
+- Database indexing
+- Stored procedures
+- Triggers
+- Views
+- Functions and operators
