@@ -1,1 +1,1 @@
-ALU ES6 classes
+ES6_classes

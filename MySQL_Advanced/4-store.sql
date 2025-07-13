@@ -1,7 +1,20 @@
--- Write a SQL script that creates a trigger that decreases the quantity of an item after adding a new order.
--- Quantity in the table items can be negative.
--- Context: Updating multiple tables for one action from your application can generate issue: network disconnection,
--- crash, etc… to keep your data in a good shape, let MySQL do it for you!
+-- update quantity of items in the items table when a new order is placed
+DELIMITER //
 
-CREATE TRIGGER decrease_items_quantity AFTER INSERT ON orders FOR EACH ROW
-UPDATE items SET quantity = quantity - NEW.number WHERE name=NEW.item_name;
+CREATE TRIGGER update_quantity_insert BEFORE INSERT ON orders
+FOR EACH ROW
+BEGIN
+    DECLARE item_qt INT;
+
+    SELECT quantity INTO item_qt
+    FROM items
+    WHERE name = NEW.item_name;
+
+    UPDATE items
+    SET quantity = item_qt - NEW.number
+    WHERE name = NEW.item_name;
+END;
+
+//
+
+DELIMITER ;

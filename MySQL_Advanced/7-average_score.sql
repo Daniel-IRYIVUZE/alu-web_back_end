@@ -1,17 +1,11 @@
--- Create stored procedure ComputeAverageScoreForUser
--- computes and stores average score for a student
--- Takes 1 input user_id, a users.id
+-- get average score for user
+DELIMITER //
 
-DELIMITER $$
-
-DROP PROCEDURE IF EXISTS ComputeAverageScoreForUser;
-CREATE PROCEDURE ComputeAverageScoreForUser (IN user_id INT)
+CREATE PROCEDURE ComputeAverageScoreForUser(IN input_user_id INT)
 BEGIN
-	UPDATE users
-	SET
-	average_score = (SELECT AVG(score) FROM corrections WHERE corrections.user_id = user_id)
-	WHERE id = user_id;
-
-END $$
+    DECLARE average_score FLOAT;
+    SELECT AVG(score) INTO average_score FROM corrections WHERE user_id = input_user_id;
+    UPDATE users SET average_score = average_score WHERE id = input_user_id;
+end //
 
 DELIMITER ;

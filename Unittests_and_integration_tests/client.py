@@ -1,7 +1,5 @@
-
 #!/usr/bin/env python3
-"""
-Unittests and integration tests
+"""A github org client
 """
 from typing import (
     List,

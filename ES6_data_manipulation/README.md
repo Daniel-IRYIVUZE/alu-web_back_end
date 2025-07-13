@@ -1,1 +1,1 @@
-ALU ES6 data manipulation
+ES6_data_manipulation

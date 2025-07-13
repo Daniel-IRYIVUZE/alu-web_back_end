@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-""" Testing utils.py """
+""" Test for utils.py """
 
 import unittest
 from parameterized import parameterized

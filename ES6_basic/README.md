@@ -1,1 +1,1 @@
-ALU ES6 BASICS
+ES6_basic
